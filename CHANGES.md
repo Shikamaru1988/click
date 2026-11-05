@@ -6,6 +6,8 @@ Unreleased
   keyword, is deprecated and raises `TypeError` in Click 9.0. {pr}`3866`
 - An {class}`Option` name written as a Python identifier is deprecated when it
   is not already lower-cased. {pr}`3866`
+- When `multiple=True`, the auto-generated metavar now ends with `...` to
+  indicate the option can be repeated. {issue}`3652` {pr}`3881`
 - Add {attr}`Parameter.spec`, which returns how the user spells the parameter on
   the command line: `--times` for an option declared as `-t`, `--times`, and
   `FILENAME` for an argument declared as `filename`. {pr}`3877`
